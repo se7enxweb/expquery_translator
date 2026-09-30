@@ -13,7 +13,7 @@ class expquery_translatorInfo
 {
     public static function info()
     {
-        return array( 'Name' => "expquery_translator",
+        return array( 'Name' => "Exponential Query Translator",
                       'Version' => "1.0.1",
                       'Copyright' => "Copyright (C) 1998 - 2026 7x. All rights reserved.",
                       'License' => "GNU General Public License v2.0 (or any later version)",

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" requires="ezpublish 6.0">
-  <name>expquery_translator</name>
+  <name>Exponential Query Translator</name>
   <summary>Galach search query parser and node filter for Exponential CMS. Ported from netgen/query-translator.</summary>
   <version>1.0.1</version>
   <copyright>7x</copyright>
