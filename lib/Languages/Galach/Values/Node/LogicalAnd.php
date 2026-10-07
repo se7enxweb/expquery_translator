@@ -28,9 +28,9 @@ final class LogicalAnd extends Node
      * @param \QueryTranslator\Values\Token $token
      */
     public function __construct(
-        Node $leftOperand = null,
-        Node $rightOperand = null,
-        Token $token = null
+        ?Node $leftOperand = null,
+        ?Node $rightOperand = null,
+        ?Token $token = null
     ) {
         $this->leftOperand = $leftOperand;
         $this->rightOperand = $rightOperand;

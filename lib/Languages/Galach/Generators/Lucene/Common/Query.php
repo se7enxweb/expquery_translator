@@ -17,7 +17,7 @@ final class Query extends Visitor
         return $node instanceof QueryNode;
     }
 
-    public function visit(Node $node, Visitor $subVisitor = null, $options = null)
+    public function visit(Node $node, ?Visitor $subVisitor = null, $options = null)
     {
         if (!$node instanceof QueryNode) {
             throw new LogicException(

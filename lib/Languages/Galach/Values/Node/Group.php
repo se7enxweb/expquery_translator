@@ -33,8 +33,8 @@ final class Group extends Node
      */
     public function __construct(
         array $nodes = [],
-        GroupBegin $tokenLeft = null,
-        Token $tokenRight = null
+        ?GroupBegin $tokenLeft = null,
+        ?Token $tokenRight = null
     ) {
         $this->nodes = $nodes;
         $this->tokenLeft = $tokenLeft;

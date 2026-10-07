@@ -17,7 +17,7 @@ final class Group extends Visitor
         return $node instanceof GroupNode;
     }
 
-    public function visit(Node $node, Visitor $subVisitor = null, $options = null)
+    public function visit(Node $node, ?Visitor $subVisitor = null, $options = null)
     {
         if (!$node instanceof GroupNode) {
             throw new LogicException(

@@ -17,7 +17,7 @@ final class LogicalAnd extends Visitor
         return $node instanceof LogicalAndNode;
     }
 
-    public function visit(Node $node, Visitor $subVisitor = null, $options = null)
+    public function visit(Node $node, ?Visitor $subVisitor = null, $options = null)
     {
         if (!$node instanceof LogicalAndNode) {
             throw new LogicException(

@@ -18,7 +18,7 @@ final class BinaryOperator extends Visitor
         return $node instanceof LogicalAnd || $node instanceof LogicalOrNode;
     }
 
-    public function visit(Node $node, Visitor $subVisitor = null, $options = null)
+    public function visit(Node $node, ?Visitor $subVisitor = null, $options = null)
     {
         if (!$node instanceof LogicalAnd && !$node instanceof LogicalOrNode) {
             throw new LogicException(

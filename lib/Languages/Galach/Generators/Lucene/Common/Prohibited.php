@@ -17,7 +17,7 @@ final class Prohibited extends Visitor
         return $node instanceof ProhibitedNode;
     }
 
-    public function visit(Node $node, Visitor $subVisitor = null, $options = null)
+    public function visit(Node $node, ?Visitor $subVisitor = null, $options = null)
     {
         if (!$node instanceof ProhibitedNode) {
             throw new LogicException(

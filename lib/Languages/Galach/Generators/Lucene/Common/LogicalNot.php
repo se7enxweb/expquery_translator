@@ -17,7 +17,7 @@ final class LogicalNot extends Visitor
         return $node instanceof LogicalNotNode;
     }
 
-    public function visit(Node $node, Visitor $subVisitor = null, $options = null)
+    public function visit(Node $node, ?Visitor $subVisitor = null, $options = null)
     {
         if (!$node instanceof LogicalNotNode) {
             throw new LogicException(

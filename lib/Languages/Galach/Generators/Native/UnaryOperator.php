@@ -20,7 +20,7 @@ final class UnaryOperator extends Visitor
         return $node instanceof Mandatory || $node instanceof Prohibited || $node instanceof LogicalNot;
     }
 
-    public function visit(Node $node, Visitor $subVisitor = null, $options = null)
+    public function visit(Node $node, ?Visitor $subVisitor = null, $options = null)
     {
         if (!$node instanceof Mandatory && !$node instanceof Prohibited && !$node instanceof LogicalNot) {
             throw new LogicException(

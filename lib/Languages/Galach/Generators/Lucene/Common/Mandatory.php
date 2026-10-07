@@ -17,7 +17,7 @@ final class Mandatory extends Visitor
         return $node instanceof MandatoryNode;
     }
 
-    public function visit(Node $node, Visitor $subVisitor = null, $options = null)
+    public function visit(Node $node, ?Visitor $subVisitor = null, $options = null)
     {
         if (!$node instanceof MandatoryNode) {
             throw new LogicException(

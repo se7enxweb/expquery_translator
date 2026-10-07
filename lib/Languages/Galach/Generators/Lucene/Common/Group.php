@@ -31,7 +31,7 @@ final class Group extends Visitor
      * @param array|null $domainFieldMap
      * @param string|null $defaultFieldName
      */
-    public function __construct(array $domainFieldMap = null, $defaultFieldName = null)
+    public function __construct(?array $domainFieldMap = null, $defaultFieldName = null)
     {
         if ($domainFieldMap !== null) {
             $this->domainFieldMap = $domainFieldMap;
@@ -45,7 +45,7 @@ final class Group extends Visitor
         return $node instanceof GroupNode;
     }
 
-    public function visit(Node $node, Visitor $subVisitor = null, $options = null)
+    public function visit(Node $node, ?Visitor $subVisitor = null, $options = null)
     {
         if (!$node instanceof GroupNode) {
             throw new LogicException(

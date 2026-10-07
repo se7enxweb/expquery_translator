@@ -21,7 +21,7 @@ final class Prohibited extends Node
      * @param \QueryTranslator\Values\Node $operand
      * @param \QueryTranslator\Values\Token $token
      */
-    public function __construct(Node $operand = null, Token $token = null)
+    public function __construct(?Node $operand = null, ?Token $token = null)
     {
         $this->operand = $operand;
         $this->token = $token;

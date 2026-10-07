@@ -17,7 +17,7 @@ final class LogicalOr extends Visitor
         return $node instanceof LogicalOrNode;
     }
 
-    public function visit(Node $node, Visitor $subVisitor = null, $options = null)
+    public function visit(Node $node, ?Visitor $subVisitor = null, $options = null)
     {
         if (!$node instanceof LogicalOrNode) {
             throw new LogicException(
