@@ -14,7 +14,7 @@ class expquery_translatorInfo
     public static function info()
     {
         return array( 'Name' => "Exponential Query Translator",
-                      'Version' => "1.0.3",
+                      'Version' => "1.0.4",
                       'Copyright' => "Copyright (C) 1998 - 2026 7x. All rights reserved.",
                       'License' => "GNU General Public License v2.0 (or any later version)",
                       'info_url' => "https://github.com/se7enxweb/expquery_translator" );
